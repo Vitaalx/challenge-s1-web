@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+
+    main {
+        width: 80%;
+        max-width: 1500px;
+        margin: 0 auto;
+        font-family: $montserrat;
+
+        h1 {
+            font-size: 3rem;
+
+            small {
+                font-size: 1.5rem;
+                color: $whitless;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+
+            &.pattern-head {
+                margin: 2em 0;
+                padding: 1em 0;
+                font-size: 70%;
+                color: $whitless;
+                border-bottom: 1px solid $whitless;
+            }
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        h6 {
+            font-size: 0.75rem;
+        }
+
+        p {
+            font-family: $lato;
+        }
+    } 
+}
