@@ -2,6 +2,22 @@
     box-sizing: border-box;
 }
 
+.pattern-head {
+    margin: 2em 0;
+    padding: 1em 0;
+    font-size: 70%;
+    color: $whitless;
+    border-bottom: 1px solid $whitless;
+}
+
+.pattern-title {
+    font-family: $montserrat;
+}
+
+.pattern-text {
+    font-family: $lato;
+}
+
 body {
     background-color: $black;
     color: $white;
@@ -23,14 +39,6 @@ body {
 
         h2 {
             font-size: 2rem;
-
-            &.pattern-head {
-                margin: 2em 0;
-                padding: 1em 0;
-                font-size: 70%;
-                color: $whitless;
-                border-bottom: 1px solid $whitless;
-            }
         }
 
         h3 {

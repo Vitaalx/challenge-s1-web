@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block;
+    padding: 15px;
+    font-size: rem(16);
+    font-family: $lato;
+    text-decoration: none;
+    border: solid 2px $yellow;
+    background-color: transparent;
+    color: $white;
+	cursor: pointer;
+    transition:  0.3s;
+
+    &:hover {
+        background-color: $yellow;
+        color: $black;
+    }
+
+    &--disabled {
+        color: $whitless;
+        border-color: $yellowless;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: transparent;
+            color: $whitless;
+        }
+    }
+
+    &--link {
+        border-radius: 50px;
+    }
+}
