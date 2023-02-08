@@ -1,3 +1,11 @@
+:root {
+    --black: #{$black};
+    --white: #{$white};
+    --whitless: #{$whitless};
+    --yellow: #{$yellow};
+    --yellowless: #{$yellowless};
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,8 +14,8 @@
     margin: 2em 0;
     padding: 1em 0;
     font-size: 70%;
-    color: $whitless;
-    border-bottom: 1px solid $whitless;
+    color: var(--whitless);
+    border-bottom: 1px solid var(--whitless);
 }
 
 .pattern-title {
@@ -19,8 +27,8 @@
 }
 
 body {
-    background-color: $black;
-    color: $white;
+    background-color: var(--black);
+    color: var(--white);
 
     main {
         width: 80%;
@@ -33,7 +41,7 @@ body {
 
             small {
                 font-size: 1.5rem;
-                color: $whitless;
+                color: var(--whitless);
             }
         }
 

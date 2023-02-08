@@ -4,25 +4,25 @@
     font-size: rem(16);
     font-family: $lato;
     text-decoration: none;
-    border: solid 2px $yellow;
+    border: solid 2px var(--yellow);
     background-color: transparent;
     color: $white;
 	cursor: pointer;
     transition:  0.3s;
 
     &:hover {
-        background-color: $yellow;
-        color: $black;
+        background-color: var(--yellow);
+        color: var(--back);
     }
 
     &--disabled {
-        color: $whitless;
-        border-color: $yellowless;
+        color: var(--whitless);
+        border-color: var(--yellowless);
         cursor: not-allowed;
 
         &:hover {
             background-color: transparent;
-            color: $whitless;
+            color: var(--whitless);
         }
     }
 
