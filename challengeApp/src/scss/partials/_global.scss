@@ -1,18 +1,23 @@
 :root {
     --black: #{$black};
+    --blackless: #{$blackless};
     --white: #{$white};
     --whitless: #{$whitless};
     --yellow: #{$yellow};
     --yellowless: #{$yellowless};
     --red-error: #{$red-error};
     --green-success: #{$green-success};
-    --orange: ($orange);
-    --blue: ($blue);
-    --red: ($red);
+    --orange: #{$orange};
+    --blue: #{$blue};
+    --red: #{$red};
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
 }
 
 .pattern-head {
@@ -74,4 +79,10 @@ body {
             font-family: $lato;
         }
     } 
+}
+
+@media screen and (max-width: $mobile) {
+    html {
+        font-size: 12px;
+    }
 }
