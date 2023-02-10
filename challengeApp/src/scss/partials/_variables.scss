@@ -2,6 +2,7 @@
 $yellow: #FFD600;
 $yellowless: rgba(255, 213, 0, 0.5);
 $black: #1E1E1E;
+$blackless: rgba(30, 30, 30, 0.5);
 $white: #ffffff;
 $whitless: rgba(255, 255, 255, 0.5);
 $red-error: #FF0000;
@@ -13,3 +14,9 @@ $blue: #0094FF;
 // Fonts
 $lato: 'Lato', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
+
+
+// Media Queries
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1440px;

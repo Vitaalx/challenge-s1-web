@@ -3,3 +3,19 @@
     $base: 16;
     @return calc($px / $base) * 1rem;
 }
+
+// center element in parent
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// background cover in div
+@mixin bg-cover {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
