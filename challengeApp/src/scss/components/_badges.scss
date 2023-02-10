@@ -1,21 +1,23 @@
 .badge {
-  background-color: $black;
+  background-color: var(--black);
   font-weight: 700;
   padding: 5px 10px;
+  margin: 2px;
   font-size: rem(16);
+  text-transform: uppercase;
 
   &--red {
-    color: $black;
-    background-color: $red;
+    color: var(--black-lighter);
+    background-color: var(--red);
   }
 
   &--blue {
-    color: $black;
-    background-color: $blue;
+    color: var(--black-lighter);
+    background-color: var(--blue);
   }
 
   &--orange {
-    color: $black;
-    background-color: $orange;
+    color: var(--black-lighter);
+    background-color: var(--orange);
   }
 }

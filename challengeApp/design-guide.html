@@ -50,13 +50,57 @@
                 <input class="form-input form-input--success" type="text" name="text" placeholder="Success input text">
             </div>
         </section>
-        <section>
+        <section id="badges">
             <h2 class="pattern-head">Badges</h2>
             <!-- -->
-            <span class="badge">News</span>
-            <span class="badge badge--blue">News</span>
-            <span class="badge badge--orange">News</span>
-            <span class="badge badge--red">News</span>
+            <div class="badges">
+                <span class="badge">News</span>
+                <span class="badge badge--blue">News</span>
+                <span class="badge badge--orange">News</span>
+                <span class="badge badge--red">News</span>
+            </div>
+        </section>
+        <section>
+            <h2 class="pattern-head">Card News</h2>
+            <!-- -->
+            <div class="center-cards">
+                <article class="card-news">
+                        <div class="card-img">
+                            <div class="badges">
+                                <span class="badge">News</span>
+                                <span class="badge badge--red">Rap US</span>
+                            </div>
+                            <img src="src/images/articles/article-dababy.png" alt="Card img">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Les plus grands noms du rap français se réunissent pour un concert historique !</h3>
+                            <p class="card-p">
+                                Nekfeu, Booba, Rohff, Kaaris, Jul, Neko, Lacrim, Sch, Lous and The Yakuza, Niska.
+                            </p>
+                            <a href="#" class="card-link-cta">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="card-arrow" d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z" fill="black"/>
+                                </svg>
+                                Lire la news<span>8 février, 2023</span>
+                            </a>
+                        </div>
+                </article>
+                <article class="card-news card-news--small">
+                    <div class="card-content">
+                        <div class="badges">
+                            <span class="badge">News</span>
+                            <span class="badge badge--red">Rap US</span>
+                        </div>
+                        <h3 class="card-title">Les plus grands noms du rap français se réunissent pour un concert historique !</h3>
+                        <a href="#" class="card-link-cta">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="card-arrow" d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z" fill="black"/>
+                            </svg>
+                            Lire la news<span>18 février, 2023</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
         <section>
             <h2 class="pattern-head">Card Playlist</h2>
@@ -78,5 +122,6 @@
             </article>
         </section>
     </main>
+<script src="src/js/components/cards-news.js"></script>
 </body>
 </html>
