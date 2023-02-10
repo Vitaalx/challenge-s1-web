@@ -107,13 +107,26 @@
       }
 
       .card-title {
-        font-size: 20px;
         margin-top: 55px;
-        text-overflow: ellipsis;
       }
 
       .card-link-cta {
-        font-size: 16px;
+        font-size: rem(16);
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    &:not(&--small) {
+      height: 400px;
+      width: 300px;
+
+      .card-content {
+        height: 190px;
+      }
+
+      .card-img {
+        height: 210px;
       }
     }
   }
