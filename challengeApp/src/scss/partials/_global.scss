@@ -1,6 +1,7 @@
 :root {
     --black: #{$black};
     --blackless: #{$blackless};
+    --black-lighter: #{$black-lighter};
     --white: #{$white};
     --whitless: #{$whitless};
     --yellow: #{$yellow};
@@ -37,7 +38,7 @@ html {
 }
 
 body {
-    background-color: var(--black);
+    background-color: var(--black-lighter);
     color: var(--white);
 
     main {
@@ -45,6 +46,13 @@ body {
         max-width: 1500px;
         margin: 0 auto;
         font-family: $montserrat;
+
+        #badges .badges {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
 
         h1 {
             font-size: 3rem;
@@ -78,7 +86,17 @@ body {
         p {
             font-family: $lato;
         }
-    } 
+
+        .center-cards {
+            display: flex;
+            flex-direction: row;
+        }
+        @media screen and (max-width: $mobile) {
+            .center-cards {
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $mobile) {
