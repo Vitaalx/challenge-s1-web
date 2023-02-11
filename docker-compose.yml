@@ -1,33 +1,14 @@
 version: '3'
 services:
-  #Nginx Service
-  webserver:
-    image: nginx:alpine
-    container_name: webserver
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "8001:80"
-    volumes:
-      - ./app1/:/var/www
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
-    networks:
-      - app-network
-
   #App
-  challengeApp:
-      build: ./challengeApp
+  challenge-app:
+      build:
+        context: ./challengeApp
+        dockerfile: Dockerfile
       container_name: challengeApp
       restart: unless-stopped
-      tty: true
+      working_dir: /app
       ports:
-      - "9001:9000"
+      - "80:8080"
       volumes:
-      - ./app1/:/var/www
-      networks:
-      - app-network
-
-#Docker Network
-networks:
-    app-network:
-      driver: bridge
+      - ./challengeApp/:/app

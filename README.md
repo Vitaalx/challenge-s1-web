@@ -42,7 +42,7 @@ docker-compose up
 5. Open the project in your browser
 
 ```bash
-http://localhost:8080
+http://localhost:80
 ```
 
 ## Features
