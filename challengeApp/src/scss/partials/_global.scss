@@ -1,0 +1,122 @@
+:root {
+    --black: #{$black};
+    --blackless: #{$blackless};
+    --black-lighter: #{$black-lighter};
+    --white: #{$white};
+    --whitless: #{$whitless};
+    --yellow: #{$yellow};
+    --yellowless: #{$yellowless};
+    --red-error: #{$red-error};
+    --green-success: #{$green-success};
+    --orange: #{$orange};
+    --blue: #{$blue};
+    --red: #{$red};
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--black-lighter);
+    color: var(--white);
+    font-family: $montserrat;
+}
+
+main {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+
+    small {
+        font-size: 1.5rem;
+        color: var(--whitless);
+    }
+}
+
+h2 {
+    font-size: 2rem;
+
+    &.pattern-head {
+        margin: 2em 0;
+        padding: 1em 0;
+        font-size: 70%;
+        color: var(--whitless);
+        border-bottom: 1px solid var(--whitless);
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+}
+
+p {
+    font-family: $lato;
+}
+
+.pattern-title {
+    font-family: $montserrat;
+}
+
+.pattern-text {
+    font-family: $lato;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--yellow);
+    }
+}
+
+#badges .badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.center-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: $tablet) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    html {
+        font-size: 12px;
+    }
+
+    .center-cards {
+        flex-direction: column;
+    }
+}

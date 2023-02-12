@@ -1,6 +1,7 @@
 dist
 .idea
 .vscode
-.node_modules
+node_modules
 .npm
 .env
+package-lock.json
