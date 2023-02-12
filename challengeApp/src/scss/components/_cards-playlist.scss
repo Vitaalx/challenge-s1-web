@@ -9,12 +9,12 @@
         width: 100%;
         height: 400px;
 
-        .badges {
+        .card-badges {
             position: absolute;
             top: 25px;
             left: 25px;
-            transform: rotate(-3.5deg);
             width: 100%;
+            transform: rotate(-3.5deg);
 
             .badge {
                 position: absolute;
@@ -48,14 +48,14 @@
         }
     }
 
-    .card-content {
+    .card-title {
         width: 100%;
         height: 50px;
-        border-top: solid 1px var(--black);
+        border-top: solid 1px var(--blacker);
         @include flex-center;
         h3 {
             margin: 0;
-            color: var(--black);
+            color: var(--blacker);
         }
     }
 
@@ -74,10 +74,10 @@
         .card-img {
             height: 250px;
 
-            .badges {
-                transform: scale(0.5) rotate(-5deg);
+            .card-badges {
+                transform: scale(0.75) rotate(-5deg);
                 top: 15px;
-                left: -45px;
+                left: -15px;
             }
 
             .card-overlay {

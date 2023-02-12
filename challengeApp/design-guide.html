@@ -14,7 +14,7 @@
         Challenge App
     </h1>
     <section>
-        <h2 class="pattern-head">Typography</h2>
+        <h2 class="pattern-category">Typography</h2>
         <span class="pattern-title">Title typo: Montserrat</span>
         <br>
         <span class="pattern-text">Text typo: lato</span>
@@ -26,12 +26,14 @@
         <h5>Heading Level 5</h5>
         <h6>Heading Level 6</h6>
 
-        <p>This is an <b>ordinary paragraph</b> that is <i>long enough</i> to wrap to <u>multiple lines</u> so that you
-            can see how the line spacing looks.</p>
+        <p>
+            This is an <b>ordinary paragraph</b> that is <i>long enough</i>
+            to wrap to <u>multiple lines</u> so that you can see how the line spacing looks.
+        </p>
         <!--  -->
     </section>
     <section>
-        <h2 class="pattern-head">Buttons</h2>
+        <h2 class="pattern-category">Buttons</h2>
         <!--  -->
         <button class="btn">Normal button</button>
         <button class="btn btn--disabled">Disabled button</button>
@@ -40,80 +42,82 @@
         <!--  -->
     </section>
     <section>
-        <h2 class="pattern-head">Inputs</h2>
-        <span class="pattern-text">Input text:</span>
-        <br>
+        <h2 class="pattern-category">Inputs</h2>
         <!--  -->
-        <div>
-            <input class="form-input" type="text" name="text" placeholder="Normal input text">
-            <input class="form-input form-input--error" type="text" name="text" placeholder="Error input text">
-            <input class="form-input form-input--success" type="text" name="text" placeholder="Success input text">
-        </div>
+        <input class="form-input" type="text" name="text" placeholder="Normal input text">
+        <input class="form-input form-input--error" type="text" name="text" placeholder="Error input text">
+        <input class="form-input form-input--success" type="text" name="text" placeholder="Success input text">
+        <!--  -->
     </section>
-    <section id="badges">
-        <h2 class="pattern-head">Badges</h2>
-        <!-- -->
-        <div class="badges">
+    <section>
+        <h2 class="pattern-category">Badges</h2>
+        <div class="wrap-ctnr">
+            <!-- -->
             <span class="badge">News</span>
             <span class="badge badge--blue">News</span>
             <span class="badge badge--orange">News</span>
             <span class="badge badge--red">News</span>
+            <!--  -->
         </div>
     </section>
     <section>
-        <h2 class="pattern-head">Card News</h2>
-        <!-- -->
-        <div class="center-cards">
+        <h2 class="pattern-category">Card News</h2>
+        <div class="row-ctnr">
+            <!-- -->
             <article class="card-news">
                 <div class="card-img">
-                    <div class="badges">
+                    <div class="card-badges">
                         <span class="badge">News</span>
                         <span class="badge badge--red">Rap US</span>
                     </div>
                     <img src="src/images/articles/article-dababy.png" alt="Card img">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title" text-overflow="50">Les plus grands noms du rap français se réunissent pour un
-                        concert historique !</h3>
-                    <p class="card-p">
+                    <h3 class="card-content-title" text-overflow="50">
+                        Les plus grands noms du rap français
+                        se réunissent pour un concert historique !
+                    </h3>
+                    <p class="card-content-text">
                         Nekfeu, Booba, Rohff, Kaaris, Jul, Neko, Lacrim, Sch, Lous and The Yakuza, Niska.
                     </p>
-                    <a href="#" class="card-link-cta">
+                    <a href="#" class="card-link">
                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path id="card-arrow"
-                                  d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
-                                  fill="black"/>
+                                d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
+                                fill="black"/>
                         </svg>
-                        Lire la news<span>8 février, 2023</span>
+                        Lire la news <span>8 février, 2023</span>
                     </a>
                 </div>
             </article>
             <article class="card-news card-news--small">
                 <div class="card-content">
-                    <div class="badges">
+                    <div class="card-badges">
                         <span class="badge">News</span>
                         <span class="badge badge--red">Rap US</span>
                     </div>
-                    <h3 class="card-title" text-overflow="40">Les plus grands noms du rap français se réunissent pour un
-                        concert historique !</h3>
-                    <a href="#" class="card-link-cta">
+                    <h3 class="card-content-title" text-overflow="40">
+                        Les plus grands noms du rap français se réunissent
+                        pour un concert historique !</h3>
+                    <a href="#" class="card-link">
                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path id="card-arrow"
-                                  d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
-                                  fill="black"/>
+                                d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
+                                fill="black"/>
                         </svg>
-                        Lire la news<span>18 février, 2023</span>
+                        Lire la news <span>18 février, 2023</span>
                     </a>
                 </div>
             </article>
+            <!-- -->
         </div>
     </section>
     <section>
-        <h2 class="pattern-head">Card Playlist</h2>
+        <h2 class="pattern-category">Card Playlist</h2>
         <!-- -->
         <article class="card-playlist">
             <div class="card-img">
-                <div class="badges">
+                <div class="card-badges">
                     <span class="badge">News</span>
                     <span class="badge badge--red">Rap US</span>
                 </div>
@@ -122,14 +126,14 @@
                 </div>
                 <img src="./src/images/playlists/album-music-to-be-murdered.jpg" alt="">
             </div>
-            <div class="card-content">
+            <div class="card-title">
                 <h3>Playlist Rap US</h3>
             </div>
         </article>
         <!-- -->
     </section>
     <section>
-        <h2 class="pattern-head">Header</h2>
+        <h2 class="pattern-category">Header</h2>
         <!-- -->
         <header>
             <div class="burger-ctnr">
@@ -137,8 +141,8 @@
                     <div class="burger-line"></div>
                 </div>
             </div>
-            <div class="navigation-desktop">
-                <div class="logo">
+            <div class="nav-desktop">
+                <div class="nav-logo">
                     <img src="./src/images/logo.png" alt="Logo">
                 </div>
                 <nav>
@@ -155,11 +159,11 @@
         <!-- -->
     </section>
     <section>
-        <h2 class="pattern-head">Footer</h2>
+        <h2 class="pattern-category">Footer</h2>
         <!-- -->
         <footer>
             <div class="footer-content">
-                <div class="logo">
+                <div class="footer-logo">
                     <img src="./src/images/logo.png" alt="Logo">
                 </div>
                 <div class="footer-nav">
@@ -199,62 +203,63 @@
         <!-- -->
     </section>
     <section>
-        <h2 class="pattern-head">Carrousel</h2>
+        <h2 class="pattern-category">Carrousel</h2>
+        <!--  -->
         <div class="carrousel">
             <div class="prev-btn">
                 <svg width="50" height="50" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.7166 17.4926L11.1366 12.9126L15.7166 8.3226L14.3066 6.9126L8.30664 12.9126L14.3066 18.9126L15.7166 17.4926Z"
-                          fill="yellow"/>
+                        fill="yellow"/>
                 </svg>
             </div>
-            <div class="slides-container">
-                <div class="slide-img">
+            <div class="slides-ctnr">
+                <div class="slide">
                     <div class="slide-content">
-                        <div class="badges">
+                        <div class="badges-ctnr">
                             <span class="badge">News</span>
                             <span class="badge badge--red">Rap US</span>
                         </div>
                         <div class="slide-text">
                             <h3 class="slide-title">Le rap au top de la mode</h3>
-                            <p class="slide-p">
-                                Le rap devient le genre musical le plus populaire, avec ses artistes dominants les
-                                charts et
+                            <p class="slide-text">
+                                Le rap devient le genre musical le plus populaire,
+                                avec ses artistes dominants les charts et
                                 les cœurs des fans.
                             </p>
                         </div>
                     </div>
                     <img src="https://i.postimg.cc/hvtQjxyw/slide1.jpg" alt="Slide 1">
                 </div>
-                <div class="slide-img">
+                <div class="slide">
                     <div class="slide-content">
-                        <div class="badges">
+                        <div class="badges-ctnr">
                             <span class="badge">News</span>
                             <span class="badge badge--orange">Pop</span>
                         </div>
                         <div class="slide-text">
                             <h3 class="slide-title">Rihanna</h3>
-                            <p class="slide-p">
-                                Rihanna, l'une des plus grandes stars de la musique pop internationale, est de nouveau
-                                sous
+                            <p class="slide-text">
+                                Rihanna, l'une des plus grandes stars de la musique 
+                                pop internationale, est de nouveau sous
                                 les feux de la rampe.
                             </p>
                         </div>
                     </div>
                     <img src="https://i.postimg.cc/7YbTr3TJ/slide2.jpg" alt="Slide 2">
                 </div>
-                <div class="slide-img">
+                <div class="slide">
                     <div class="slide-content">
-                        <div class="badges">
+                        <div class="badges-ctnr">
                             <span class="badge">News</span>
                             <span class="badge badge--orange">Pop</span>
                         </div>
                         <div class="slide-text">
                             <h3 class="slide-title">Ariana Grande</h3>
-                            <p class="slide-p">
-                                Au cours de l'année écoulée, de nombreuses femmes talentueuses ont dominé les charts
-                                musicaux avec leurs albums et leurs chansons. Les artistes les plus écoutées incluent
-                                Ariana
-                                Grande, Billie Eilish, Taylor Swift et Dua Lipa.
+                            <p class="slide-text">
+                                Au cours de l'année écoulée, de nombreuses femmes talentueuses 
+                                ont dominé les charts musicaux avec leurs albums et leurs chansons.
+                                Les artistes les plus écoutées incluent Ariana Grande, Billie Eilish,
+                                Taylor Swift et Dua Lipa.
                             </p>
                         </div>
                     </div>
@@ -264,12 +269,13 @@
             <div class="next-btn">
                 <svg width="50" height="50" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
-                          fill="yellow"/>
+                        fill="yellow"/>
                 </svg>
             </div>
-            <div class="navigation-dots">
+            <div class="nav-dots">
             </div>
         </div>
+        <!--  -->
     </section>
 </main>
 </body>

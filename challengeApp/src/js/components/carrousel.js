@@ -1,8 +1,8 @@
-const slideImage = document.querySelectorAll(".slide-img");
-const slidesContainer = document.querySelector(".slides-container");
+const slideImage = document.querySelectorAll(".slide");
+const slidesContainer = document.querySelector(".slides-ctnr");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
-const navigationDots = document.querySelector(".navigation-dots");
+const navigationDots = document.querySelector(".nav-dots");
 
 let numberOfImages = slideImage.length;
 let slideWidth = slideImage[0].clientWidth;
@@ -30,7 +30,7 @@ init();
 function createNavigationDots() {
     for (let i = 0; i < numberOfImages; i++) {
         const dot = document.createElement("div");
-        dot.classList.add("single-dot");
+        dot.classList.add("dot");
         dot.innerHTML = i + 1;
         navigationDots.appendChild(dot);
         dot.addEventListener("click", () => {
@@ -79,14 +79,14 @@ function goToSlide(slideNumber) {
 function setActiveClass() {
     // Set active class for Slide Image
 
-    let currentActive = document.querySelector(".slide-img.active");
+    let currentActive = document.querySelector(".slide.active");
     currentActive.classList.remove("active");
     slideImage[currentSlide].classList.add("active");
 
 
     // Set active class for Navigation Dots
 
-    let currentDot = document.querySelector(".single-dot.active");
+    let currentDot = document.querySelector(".dot.active");
     currentDot.classList.remove("active");
     navigationDots.children[currentSlide].classList.add("active");
 }

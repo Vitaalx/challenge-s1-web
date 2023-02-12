@@ -1,7 +1,7 @@
 :root {
+    --blacker: #{$blacker};
     --black: #{$black};
     --blackless: #{$blackless};
-    --black-lighter: #{$black-lighter};
     --white: #{$white};
     --whitless: #{$whitless};
     --yellow: #{$yellow};
@@ -23,7 +23,7 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--black-lighter);
+    background-color: var(--black);
     color: var(--white);
     font-family: $montserrat;
 }
@@ -35,52 +35,40 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: rem(48);
 
     small {
-        font-size: 1.5rem;
         color: var(--whitless);
+        font-size: rem(24);
     }
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: rem(32);
 
-    &.pattern-head {
+    &.pattern-category {
         margin: 2em 0;
         padding: 1em 0;
-        font-size: 70%;
-        color: var(--whitless);
         border-bottom: 1px solid var(--whitless);
+        color: var(--whitless);
+        font-size: 70%;
     }
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: rem(24);
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: rem(20);
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: rem(16);
 }
 
 h6 {
-    font-size: 0.75rem;
-}
-
-p {
-    font-family: $lato;
-}
-
-.pattern-title {
-    font-family: $montserrat;
-}
-
-.pattern-text {
-    font-family: $lato;
+    font-size: rem(12);
 }
 
 a {
@@ -93,16 +81,29 @@ a {
     }
 }
 
-#badges .badges {
+p {
+    font-family: $lato;
+}
+
+span {
+    &.pattern-title {
+        font-family: $montserrat;
+    }
+
+    &.pattern-text {
+        font-family: $lato;
+    }
+}
+
+.wrap-ctnr {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
 }
 
-.center-cards {
+.row-ctnr {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
 }
 
 @media screen and (max-width: $tablet) {
@@ -116,7 +117,7 @@ a {
         font-size: 12px;
     }
 
-    .center-cards {
-        flex-direction: column;
+    .row-ctnr {
+        flex-flow: column nowrap;
     }
 }

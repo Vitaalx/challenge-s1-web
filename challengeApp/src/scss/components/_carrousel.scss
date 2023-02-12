@@ -3,28 +3,23 @@
   position: relative;
   overflow: hidden;
 
-  .navigation-dots {
-
-    display: flex;
+  .nav-dots {
     height: 32px;
-    align-items: center;
-    justify-content: center;
     margin: -50px 0 16px;
+    @include flex-center;
 
-    .single-dot {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--black);
+    .dot {
       z-index: 100;
-      height: 30px;
       width: 30px;
+      height: 30px;
       margin: 0 18px;
-      border: 1px solid var(--black);
+      @include flex-center;
+      color: var(--blacker);
+      border: 1px solid var(--blacker);
       border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
       cursor: pointer;
       transition: 0.3s;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
       &.active {
         background-color: var(--yellow);
@@ -38,19 +33,19 @@
 
   .next-btn,
   .prev-btn {
-    display: flex;
-    align-items: center;
-    padding: 16px;
+    z-index: 100;
     position: absolute;
     top: 50%;
     height: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
     transform: translateY(-50%);
-    z-index: 100;
     transition: 0.3s;
 
     &:hover {
-      cursor: pointer;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
     }
   }
 
@@ -62,15 +57,15 @@
     right: 0;
   }
 
-  .slides-container {
-    height: 540px;
+  .slides-ctnr {
     position: relative;
+    height: 540px;
     transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
 
-    .slide-img {
-      height: 100%;
-      width: 100%;
+    .slide {
       position: absolute;
+      width: 100%;
+      height: 100%;
 
       .slide-content {
         position: absolute;
@@ -91,7 +86,7 @@
           }
         }
 
-        .badges {
+        .badges-ctnr {
           position: absolute;
           width: 100%;
           transform: rotate(-3.5deg);
@@ -117,11 +112,12 @@
             margin-top: 65px;
           }
 
-          .single-dot {
+          .dot {
             margin: 0 8px;
           }
         }
       }
+      
       img {
         @include bg-cover;
       }
