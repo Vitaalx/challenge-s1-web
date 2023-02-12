@@ -2,12 +2,12 @@
     display: inline-block;
     margin: 5px;
     padding: 15px;
+    background-color: transparent;
+    border: solid 2px var(--yellow);
+    color: $white;
     font-size: rem(16);
     font-family: $lato;
     text-decoration: none;
-    border: solid 2px var(--yellow);
-    background-color: transparent;
-    color: $white;
 	cursor: pointer;
     transition:  0.3s;
 
@@ -17,8 +17,8 @@
     }
 
     &--disabled {
-        color: var(--whitless);
         border-color: var(--yellowless);
+        color: var(--whitless);
         cursor: not-allowed;
 
         &:hover {
