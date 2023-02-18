@@ -5,3 +5,4 @@ node_modules
 .npm
 .env
 package-lock.json
+webpack.config.js

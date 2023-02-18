@@ -11,8 +11,50 @@ header {
         position: absolute;
         display: none;
         right: 0;
+        z-index: 200;
         width: 100px;
         height: 100px;
+    }
+
+    .burger-wrapper {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        right: -300px; 
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        background-color: var(--blacker);
+        transition: 0.3s;
+
+        &.active {
+            right: 0;
+            box-shadow: 6px 0 5px 0 rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        nav {
+            margin-top: 100px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: solid 5px var(--yellow);
+            border-bottom: solid 10px var(--yellow);
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    margin: 10px;
+                    padding: 10px;
+                }
+            }
+        }
     }
 
     .nav-desktop {
