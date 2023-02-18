@@ -117,5 +117,4 @@ automateSlider();
 window.onresize = function () {
     slideWidth = slideImage[0].clientWidth;
     slidesContainer.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-    console.log(slideWidth);
 }

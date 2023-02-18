@@ -7,8 +7,20 @@ footer {
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+
+        .footer-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--whitless);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0 5px 0px;
+            color: var(--whitless);
+        }
 
         .footer-logo {
             width: 100px;
@@ -20,6 +32,7 @@ footer {
         }
 
         nav {
+            width: 130px;
             ul {
                 padding: 0;
                 list-style: none;
@@ -30,10 +43,17 @@ footer {
                     margin-bottom: 10px;
 
                     a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                         color: var(--whitless);
 
                         &:hover {
                             color: var(--yellowless);
+
+                            #icon-twitter, #icon-facebook, #icon-instagram {
+                                fill: var(--yellowless);
+                            }
                         }
                     }
                 }
@@ -45,11 +65,20 @@ footer {
         padding: 25px 50px;
 
         .footer-content {
-            flex-direction: column;
-            align-items: center;
+
+            .footer-top {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: center;
+            }
 
             nav {
                 margin-top: 25px;
+                width: 120px;
             }
         }
     }
