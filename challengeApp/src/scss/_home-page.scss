@@ -1,10 +1,8 @@
 .our-mission {
-  margin: 90px 185px 225px 190px;
+  margin-top: 90px;
 }
 
 .last-news {
-  margin: 0 185px 225px 190px;
-
   .news-header {
     display: flex;
     align-items: center;
@@ -26,8 +24,6 @@
 }
 
 .last-playlists {
-  margin: 0 185px 225px 190px;
-
   .playlists-header {
     display: flex;
     align-items: center;
@@ -36,7 +32,6 @@
 
   .playlists-content {
     display: flex;
-
 
     .playlists-draggable {
       display: flex;
@@ -54,15 +49,22 @@
   }
 }
 
+@media screen and (max-width: $tablet) {
+  html {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: $mobile) {
+  html {
+    font-size: 12px;
+  }
+
   .our-mission {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 27px 25px 25px 40px;
-
-    .lead-paragraph {
-    }
+    margin-top: 27px;
 
     h1 {
       text-align: center;
@@ -71,13 +73,9 @@
     p {
       line-height: 24px;
     }
-
-    a {
-    }
   }
-  .last-news {
-    margin: 0px 25px 25px 40px;
 
+  .last-news {
     .news-header {
       display: unset;
       text-align: center;
@@ -102,8 +100,6 @@
   }
 
   .last-playlists {
-    margin: 0px 25px 25px 40px;
-
     .playlists-header {
       display: unset;
       text-align: center;
