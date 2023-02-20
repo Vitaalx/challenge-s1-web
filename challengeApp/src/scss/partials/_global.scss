@@ -34,6 +34,10 @@ main {
     margin: 0 auto;
 }
 
+section {
+    margin: 0 185px 225px 190px;
+}
+
 h1 {
     font-size: rem(48);
 
@@ -82,7 +86,12 @@ a {
 }
 
 p {
+    font-size: 1rem;
     font-family: $lato;
+
+    &.lead-paragraph {
+        font-size: rem(20);
+    }
 }
 
 span {
@@ -109,6 +118,10 @@ span {
 @media screen and (max-width: $tablet) {
     html {
         font-size: 14px;
+    }
+
+    section {
+        margin: 0 25px 25px 40px;
     }
 }
 
