@@ -116,8 +116,6 @@ mobileCarrousel();
 
 function init() {
 
-    prevBtn.style.display = 'none';
-
     slideImage.forEach((img, i) => {
         img.style.left = i * 100 + "%";
     });
@@ -152,7 +150,6 @@ nextBtn.addEventListener("click", () => {
     if (currentSlide >= numberOfImages - 1) {
         return;
     }
-    prevBtn.style.display = 'flex';
     currentSlide++;
     goToSlide(currentSlide);
 });
@@ -163,7 +160,6 @@ prevBtn.addEventListener("click", () => {
     if (currentSlide <= 0) {
         return;
     }
-    nextBtn.style.display = 'flex';
     currentSlide--;
     goToSlide(currentSlide);
 });
@@ -172,11 +168,6 @@ prevBtn.addEventListener("click", () => {
 // Go To Slide
 
 function goToSlide(slideNumber) {
-    if (slideNumber === 0) {
-        prevBtn.style.display = 'none';
-    } else if (slideNumber === numberOfImages - 1) {
-        nextBtn.style.display = 'none';
-    }
     slidesContainer.style.transform = `translateX(-${slideWidth * slideNumber}px)`;
     currentSlide = slideNumber;
     setActiveClass();
