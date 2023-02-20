@@ -29,9 +29,11 @@ body {
 }
 
 main {
-    width: 80%;
-    max-width: 1500px;
-    margin: 0 auto;
+    &.pattern-main {
+        width: 80%;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 }
 
 header {
@@ -42,6 +44,14 @@ header {
 
 section {
     margin: 0 185px 225px 190px;
+
+    &.pattern-section {
+        margin: 0;
+    }
+}
+
+.mg-0 {
+    margin: 0;
 }
 
 h1 {
