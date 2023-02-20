@@ -4,6 +4,8 @@
     padding: 15px;
     background-color: transparent;
     border: solid 2px var(--yellow);
+    text-align: center;
+    white-space: nowrap;
     color: $white;
     font-size: rem(16);
     font-family: $lato;
@@ -13,7 +15,7 @@
 
     &:hover {
         background-color: var(--yellow);
-        color: var(--back);
+        color: var(--black);
     }
 
     &--disabled {

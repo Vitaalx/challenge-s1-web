@@ -105,22 +105,49 @@
             }
           }
         }
-        @media screen and (max-width: $mobile) {
-          width: 250px;
+      }
+
+      img {
+        @include bg-cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+
+  .carrousel {
+
+    .prev-btn, .next-btn {
+      display: none;
+    }
+
+    .dot {
+      margin: 0 8px;
+    }
+
+    .slides-ctnr {
+
+      .slide {
+
+        .slide-content {
+          width: 200px;
 
           .slide-text {
             margin-top: 65px;
           }
-
-          .dot {
-            margin: 0 8px;
-          }
         }
       }
-      
-      img {
-        @include bg-cover;
-      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+
+  .carrousel {
+
+    .prev-btn, .next-btn {
+      display: none;
     }
   }
 }

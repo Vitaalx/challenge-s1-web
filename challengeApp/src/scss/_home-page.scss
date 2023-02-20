@@ -1,0 +1,127 @@
+.our-mission {
+  margin-top: 90px;
+}
+
+.last-news {
+  .news-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .news-content {
+    display: flex;
+
+    .news-left-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .news-more-info {
+    display: none;
+  }
+}
+
+.last-playlists {
+  .playlists-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .playlists-content {
+    display: flex;
+
+    .playlists-draggable {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    article {
+      margin: 10px;
+    }
+
+    .playlists-more-info {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  html {
+    font-size: 12px;
+  }
+
+  .our-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 24px;
+    }
+  }
+
+  .last-news {
+    .news-header {
+      display: unset;
+      text-align: center;
+      a {
+        display: none;
+      }
+    }
+
+    .news-content {
+      overflow-x: scroll;
+
+      .news-left-content {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .news-more-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .last-playlists {
+    .playlists-header {
+      display: unset;
+      text-align: center;
+
+      a {
+        display: none;
+      }
+    }
+
+    .playlists-content {
+      overflow-x: scroll;
+
+      .playlists-draggable {
+        flex-wrap: nowrap;
+      }
+
+      .playlists-more-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+  }
+}
