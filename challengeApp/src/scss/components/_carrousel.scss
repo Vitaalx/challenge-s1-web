@@ -141,3 +141,13 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+
+  .carrousel {
+
+    .prev-btn, .next-btn {
+      display: none;
+    }
+  }
+}
