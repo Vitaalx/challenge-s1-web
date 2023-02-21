@@ -133,11 +133,11 @@
     }
   }
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     &:not(&--small) {
       width: 300px;
       height: 400px;
-      display: none;
+      // display: none;
 
       .card-content {
         height: 190px;

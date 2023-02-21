@@ -1,3 +1,5 @@
+/* Home page */
+
 section.carrousel {
   margin-top: 100px;
 }
@@ -57,16 +59,41 @@ header {
   }
 }
 
+/* News page */
+
+.news {
+  margin-top: 200px;
+
+  .news-ctnr {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
+
 @media screen and (max-width: $tablet) {
+  /* General */
+
   html {
     font-size: 14px;
+  }
+
+  /* News page */
+
+  .news {
+    margin-top: 150px;
   }
 }
 
 @media screen and (max-width: $mobile) {
+  /* General */
+  
   html {
     font-size: 12px;
   }
+
+  /* Home page */
 
   .our-mission {
     display: flex;
@@ -87,6 +114,7 @@ header {
     .news-header {
       display: unset;
       text-align: center;
+
       a {
         display: none;
       }
@@ -97,6 +125,10 @@ header {
 
       .news-left-content {
         flex-wrap: nowrap;
+      }
+
+      .news-right-content {
+        display: none;
       }
     }
 
