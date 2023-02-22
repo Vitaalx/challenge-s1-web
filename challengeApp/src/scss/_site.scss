@@ -66,9 +66,8 @@ header {
 
   .news-ctnr {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
   }
 }
 
@@ -83,6 +82,12 @@ header {
 
   .news {
     margin-top: 150px;
+
+    .news-ctnr {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 320px);
+    }
   }
 }
 
