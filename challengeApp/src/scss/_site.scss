@@ -82,8 +82,11 @@ header {
 }
 
 #our-crew {
+  display: flex;
+  flex-direction: column;
 
   p {
+    margin-right: 30px;
     line-height: 25px;
     flex-basis: 60%;
   }
@@ -95,15 +98,18 @@ header {
   }
 
   img {
-    width: 367px;
+    height: 200px;
     height: 207px;
     border-radius: 10px;
   }
 }
 
 #our-mission {
+  display: flex;
+  flex-direction: column;
 
   p {
+    margin-left: 30px;
     line-height: 25px;
     flex-basis: 60%;
   }
@@ -111,7 +117,6 @@ header {
   .our-mission-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   img {
@@ -122,17 +127,22 @@ header {
 }
 
 #our-platform {
+  display: flex;
+  flex-direction: column;
 
   .our-platform-content {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
 
     .our-platform-top-content {
+      margin-top: -60px;
       display: flex;
-      flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+
+      img {
+        height: 200px;
+        border-radius: 10px;
+      }
     }
 
     p {
@@ -256,7 +266,7 @@ header {
     text-align: center;
 
     .our-crew-content {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
     img {
@@ -280,7 +290,8 @@ header {
       align-items: center;
 
       .our-platform-top-content {
-        flex-direction: column;
+        margin-top: 0;
+        flex-direction: column-reverse;
         align-items: center;
       }
     }
