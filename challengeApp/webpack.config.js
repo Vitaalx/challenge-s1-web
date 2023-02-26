@@ -62,6 +62,10 @@ module.exports = {
             template: path.resolve(__dirname, "./site/news-page.html"),
             filename: "news.html"
         }),
+        new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, "./site/about-us.html"),
+            filename: "about-us.html"
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
         })

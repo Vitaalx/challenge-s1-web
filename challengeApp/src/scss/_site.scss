@@ -71,6 +71,91 @@ header {
   }
 }
 
+/* About us page */
+
+#about-our-site {
+  margin-top: 200px;
+
+  p {
+    line-height: 25px;
+  }
+}
+
+#our-crew {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-right: 30px;
+    line-height: 25px;
+    flex-basis: 60%;
+  }
+
+  .our-crew-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  img {
+    height: 200px;
+    height: 207px;
+    border-radius: 10px;
+  }
+}
+
+#our-mission {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-left: 30px;
+    line-height: 25px;
+    flex-basis: 60%;
+  }
+
+  .our-mission-content {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+}
+
+#our-platform {
+  display: flex;
+  flex-direction: column;
+
+  .our-platform-content {
+    display: flex;
+    flex-direction: column;
+
+    .our-platform-top-content {
+      margin-top: -60px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 200px;
+        border-radius: 10px;
+      }
+    }
+
+    p {
+      line-height: 25px;
+    }
+  }
+
+  img {
+    float: right;
+    clear: both;
+  }
+}
+
 @media screen and (max-width: $tablet) {
   /* General */
 
@@ -93,7 +178,7 @@ header {
 
 @media screen and (max-width: $mobile) {
   /* General */
-  
+
   html {
     font-size: 12px;
   }
@@ -169,4 +254,47 @@ header {
       }
     }
   }
+
+  /* About us page */
+
+  #about-our-site {
+    margin-top: 160px;
+    text-align: center;
+  }
+
+  #our-crew {
+    text-align: center;
+
+    .our-crew-content {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      width: 317px;
+      height: 167px;
+    }
+  }
+
+  #our-mission {
+    text-align: center;
+
+    .our-mission-content {
+      flex-direction: column;
+    }
+  }
+
+  #our-platform {
+    text-align: center;
+
+    .our-platform-content {
+      align-items: center;
+
+      .our-platform-top-content {
+        margin-top: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+  }
+
 }
