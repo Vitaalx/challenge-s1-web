@@ -1,0 +1,40 @@
+{
+  "album1": {
+    "title": "Album 1",
+    "artist": "Artist 1",
+    "year": "2015",
+    "tracks": [
+      {
+        "title": "Track 1",
+        "src": "../../music/album1/track1.mp3"
+      },
+      {
+        "title": "Track 2",
+        "src": "../../music/album1/track2.mp3"
+      },
+      {
+        "title": "Track 3",
+        "src": "../../music/album1/track3.mp3"
+      }
+    ]
+  },
+    "album2": {
+        "title": "Album 2",
+        "artist": "Artist 2",
+        "year": "2016",
+        "tracks": [
+        {
+            "title": "Track 1",
+            "src": "../../music/album2/track1.mp3"
+        },
+        {
+            "title": "Track 2",
+            "src": "../../music/album2/track2.mp3"
+        },
+        {
+            "title": "Track 3",
+            "src": "../../music/album2/track3.mp3"
+        }
+        ]
+    }
+}

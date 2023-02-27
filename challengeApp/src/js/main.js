@@ -2,3 +2,11 @@ import "./components/heading-overflow";
 import "../scss/main.scss";
 import "./components/burger-btn";
 import "./components/carrousel";
+import "./components/player"
+import "../music/album1/track1.mp3"
+import "../music/album1/track2.mp3"
+import "../music/album1/track3.mp3"
+import "../music/album2/track1.mp3"
+import "../music/album2/track2.mp3"
+import "../music/album2/track3.mp3"
+import "../music/list.json"

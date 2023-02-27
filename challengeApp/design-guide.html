@@ -312,6 +312,33 @@
         </div>
         <!--  -->
     </section>
+    <section class="pattern-section">
+        <h2 class="pattern-category">Player</h2>
+        <div class="player-music">
+            <audio id="audio-player" src="./src/music/album1/track1.mp3"></audio>
+            <div class="controls">
+                <button id="prev-btn">Précédent</button>
+                <button id="play-pause-btn">Lecture</button>
+                <button id="next-btn">Suivant</button>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+    </section>
+    <section class="pattern-section">
+        <h2 class="pattern-category">Playlist</h2>
+        <div class="playlist-music">
+            <select id="album">
+                <option value="0">Album 1</option>
+                <option value="1">Album 2</option>
+            </select>
+        </div>
+        <div class="track-list">
+            <select id="list-tracks">
+            </select>
+        </div>
+    </section>
 </main>
 </body>
 </html>

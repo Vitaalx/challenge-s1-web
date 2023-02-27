@@ -46,6 +46,21 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+                test: /\.mp3$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[folder]/[name].[ext]',
+                        outputPath: 'music/'
+                    }
+                }
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader',
+                type: 'javascript/auto'
             }
         ],
     },
