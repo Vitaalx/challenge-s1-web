@@ -25,6 +25,10 @@
         }
     }
 
+    &--active {
+        border: 2px solid var(--yellow);
+    }
+
     &--success {
         border: 2px solid var(--green-success);
         color: var(--green-success);

@@ -71,9 +71,23 @@ header {
   }
 }
 
+/* Contact page */
+
+.contact {
+  margin-top: 200px;
+
+  .form {
+    .form-group {
+      &.submit {
+        text-align: end;
+      }
+    }
+  }
+}
+
 /* About us page */
 
-#about-our-site {
+.about-our-site {
   margin-top: 200px;
 
   p {
@@ -81,7 +95,7 @@ header {
   }
 }
 
-#our-crew {
+.our-crew {
   display: flex;
   flex-direction: column;
 
@@ -104,7 +118,7 @@ header {
   }
 }
 
-#our-mission {
+.our-mission {
   display: flex;
   flex-direction: column;
 
@@ -126,7 +140,7 @@ header {
   }
 }
 
-#our-platform {
+.our-platform {
   display: flex;
   flex-direction: column;
 
@@ -255,14 +269,28 @@ header {
     }
   }
 
+  /* Contact page */
+
+  .contact {
+    margin-top: 150px;
+  
+    .form {
+      .form-group {
+        &.submit {
+          text-align: center;
+        }
+      }
+    }
+  }
+
   /* About us page */
 
-  #about-our-site {
+  .about-our-site {
     margin-top: 160px;
     text-align: center;
   }
 
-  #our-crew {
+  .our-crew {
     text-align: center;
 
     .our-crew-content {
@@ -275,7 +303,7 @@ header {
     }
   }
 
-  #our-mission {
+  .our-mission {
     text-align: center;
 
     .our-mission-content {
@@ -283,7 +311,7 @@ header {
     }
   }
 
-  #our-platform {
+  .our-platform {
     text-align: center;
 
     .our-platform-content {
@@ -296,5 +324,4 @@ header {
       }
     }
   }
-
 }
