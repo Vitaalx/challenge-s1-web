@@ -21,6 +21,7 @@
     &--disabled {
         border-color: var(--yellowless);
         color: var(--whitless);
+        pointer-events: none;
         cursor: not-allowed;
 
         &:hover {

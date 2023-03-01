@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>À propos</title>
+    <title>Contact</title>
 </head>
 <body>
 <header>
@@ -41,51 +41,46 @@
     </div>
 </header>
 <main>
-    <section class="about-our-site">
-        <h1>À propos de notre site</h1>
-        <p class="lead-paragraph">Notre site de musique est né d'un projet donné par l'école supérieure de génie informatique (ESGI). Trois
-            jeunes développeurs passionnés de musique ont uni leurs forces pour créer une plateforme qui permet de
-            découvrir les actualités musicales et de profiter de playlists soigneusement sélectionnées.</p>
-    </section>
-    <section class="our-crew">
-        <h2>Notre équipe</h2>
-        <div class="our-crew-content">
-            <p>Notre équipe est composée de trois jeunes développeurs talentueux, tous issus de l'ESGI. Nous sommes fiers de
-                notre parcours académique et de notre expérience dans le domaine de la programmation informatique. Nous
-                avons décidé de mettre nos compétences en commun pour réaliser un projet qui allie nos deux passions : la
-                musique et la technologie.</p>
-            <img src="../src/images/about-us/our-crew.jpg" alt="Our Crew">
-        </div>
-    </section>
-    <section class="our-mission">
-        <h2>Notre mission</h2>
-        <div class="our-mission-content">
-            <img src="../src/images/about-us/our-mission.jpg" alt="Our Mission">
-            <p>Notre mission est simple : offrir aux passionnés de musique une plateforme qui leur permet de rester à jour
-                sur les actualités musicales et de découvrir de nouveaux artistes. Nous croyons que la musique est un
-                langage universel qui peut rassembler les gens, et nous voulons contribuer à cette union en offrant une
-                plateforme accessible à tous.</p>
-        </div>
-    </section>
-    <section class="our-platform">
-        <h2>Notre plateforme</h2>
-        <div class="our-platform-content">
-            <div class="our-platform-top-content">
-                <p>Notre plateforme est conçue pour offrir une expérience utilisateur agréable et facile à utiliser. Nous
-                    proposons des actualités musicales régulières, ainsi que des playlists créées par notre équipe de passionnés
-                    de musique. Nous avons également prévu un système de recommandation pour vous aider à découvrir de nouveaux
-                    artistes qui correspondent à vos goûts musicaux.</p>
-                <img src="../src/images/about-us/logo.png" alt="Logo">
+    <section class="contact">
+        <h1>Nous contacter</h1>
+        <p class="lead-paragraph">
+            Envie de nous partager votre avis, 
+            des suggestions d’améliorations ou encore un proposition de partenariat ? 
+            Faites-le nous savoir !
+        </p>
+        <form class="form">
+            <div class="form-group">
+                <div>
+                    <label for="lastname">Votre nom</label>
+                    <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Thomas" required>
+                </div>
+                <div>
+                    <label for="firstname">Votre prénom</label>
+                    <input class="form-input" type="text" name="firstname" id="firstname" placeholder="Dupont" required>
+                </div>
             </div>
-            <br>
-            <p>Nous sommes passionnés de musique et nous sommes fiers de vous offrir cette plateforme. Nous espérons que vous
-                trouverez ici tout ce que vous cherchez et que vous découvrirez de nouveaux artistes qui vous plairont.</p>
-            <br>
-            <p>Si vous avez des commentaires ou des suggestions pour améliorer notre plateforme, n'hésitez pas à nous contacter.
-                Nous sommes toujours heureux de recevoir vos retours.</p>
-            <br>
-            <p>Merci de visiter notre site de musique !</p>
-        </div>
+            <div class="form-group">
+                <div>
+                    <label for="email">Votre e-mail</label>
+                    <input class="form-input" type="email" name="email" id="email" placeholder="tdupont@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phone">Votre numéro de téléphone</label>
+                    <input class="form-input" type="tel" name="phone" id="phone" placeholder="0607080910"pattern="0[1-9](?:\d{2}){4}" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="message">Qu’avez vous à nous dire ?</label>
+                    <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="J'adore la musique" required></textarea>
+                </div>
+            </div>
+            <div class="form-group submit">
+                <div>
+                    <input class="btn btn--disabled submit-btn" type="submit" value="Envoyer">
+                </div>
+            </div>
+        </form>
     </section>
 </main>
 <footer>
