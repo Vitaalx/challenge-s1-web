@@ -22,14 +22,16 @@ inputs.forEach(input => {
     });
 });
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    const allInputsFilled = [...inputs].every(input => input.value !== '');
-
-    if (allInputsFilled) {
-        alert('Votre message a bien été envoyé !');
-        inputs.forEach(input => {
-            input.value = '';
-        });
-    }
-});
+if(form){
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const allInputsFilled = [...inputs].every(input => input.value !== '');
+    
+        if (allInputsFilled) {
+            alert('Votre message a bien été envoyé !');
+            inputs.forEach(input => {
+                input.value = '';
+            });
+        }
+    });
+}
