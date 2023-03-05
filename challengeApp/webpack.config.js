@@ -46,7 +46,35 @@ module.exports = {
                         ]
                     }
                 }
-            }
+            },
+            {
+                test: /\.mp3$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[folder]/[name].[ext]',
+                        outputPath: 'music/'
+                    }
+                }
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader',
+                type: 'javascript/auto'
+            },
+            {
+                test: /\.png$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[folder]/[name].[ext]',
+                            outputPath: 'images/',
+                            publicPath: 'images/'
+                        }
+                    },
+                ],
+            },
         ],
     },
     plugins: [
@@ -69,6 +97,14 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: path.resolve(__dirname, "./site/about-us.html"),
             filename: "about-us.html"
+        }),
+        new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, "./site/load-img.html"),
+            filename: "load-img.html"
+        }),
+        new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, "./site/playlist-page.html"),
+            filename: "playlist.html"
         }),
         new MiniCssExtractPlugin({
             filename: "[name].css",

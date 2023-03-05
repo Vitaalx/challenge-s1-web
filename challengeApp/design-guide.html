@@ -70,7 +70,7 @@
                         <span class="badge">News</span>
                         <span class="badge badge--red">Rap US</span>
                     </div>
-                    <img src="src/images/articles/article-dababy.png" alt="Card img">
+                    <img src="src/images/articles/article-dababy.jpg" alt="Card img">
                 </div>
                 <div class="card-content">
                     <h3 class="card-content-title" text-overflow="50">
@@ -154,7 +154,7 @@
             </div>
             <div class="nav-desktop">
                 <div class="nav-logo">
-                    <img src="./src/images/logo.png" alt="Logo">
+                    <img src="src/images/logo.jpg" alt="Logo">
                 </div>
                 <nav>
                     <ul>
@@ -176,7 +176,7 @@
             <div class="footer-content">
                 <div class="footer-top">
                     <div class="footer-logo">
-                        <img src="./src/images/logo.png" alt="Logo">
+                        <img src="src/images/logo.jpg" alt="Logo">
                     </div>
                     <div class="footer-nav">
                         <h3>Contenu</h3>
@@ -311,6 +311,47 @@
             </div>
         </div>
         <!--  -->
+    </section>
+    <section class="pattern-section">
+        <h2 class="pattern-category">Player</h2>
+        <div class="player-music">
+            <div class="player-music-img">
+                <img id="player-music-img" src="src/images/player/music.jpg" alt="album1">
+            </div>
+            <div class="player-music-controllers">
+                <audio id="audio-player" src="./src/music/album1/track1.mp3"></audio>
+                <div class="controls">
+                    <button id="prev-btn"><img src="src/images/player/skip_previous.jpg" alt="previous"></button>
+                    <button id="play-pause-btn"><img src="src/images/player/play_circle.jpg" alt="play-pause"></button>
+                    <button id="next-btn"><img src="src/images/player/skip_next.jpg" alt="next"></button>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pattern-section">
+        <h2 class="pattern-category">Playlist</h2>
+        <div class="playlist-music">
+            <select id="album">
+                <option value="0">Album 1</option>
+                <option value="1">Album 2</option>
+            </select>
+        </div>
+        <div class="track-list">
+            <select id="list-tracks">
+            </select>
+        </div>
+
+        <div class="music-playlist">
+            <ul class="scroll-ul">
+            </ul>
+        </div>
+
+        <div class="music-album">
+
+        </div>
     </section>
 </main>
 </body>
