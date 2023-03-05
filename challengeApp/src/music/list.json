@@ -3,38 +3,52 @@
     "title": "Album 1",
     "artist": "Artist 1",
     "year": "2015",
+    "img": "./images/playlists/album-music-ariana-grande.png",
     "tracks": [
       {
         "title": "Track 1",
-        "src": "../../music/album1/track1.mp3"
+        "src": "../../music/album1/track1.mp3",
+        "duration": "3:00",
+        "cover": "./images/playlists/album-music-jefe-ninho.png"
       },
       {
         "title": "Track 2",
-        "src": "../../music/album1/track2.mp3"
+        "src": "../../music/album1/track2.mp3",
+        "duration": "3:45",
+        "cover": "./images/playlists/album-music-ariana-grande.png"
       },
       {
         "title": "Track 3",
-        "src": "../../music/album1/track3.mp3"
+        "src": "../../music/album1/track3.mp3",
+        "duration": "3:45",
+        "cover": "./images/playlists/album-music-rihanna.png"
       }
     ]
   },
-    "album2": {
-        "title": "Album 2",
-        "artist": "Artist 2",
-        "year": "2016",
-        "tracks": [
-        {
-            "title": "Track 1",
-            "src": "../../music/album2/track1.mp3"
-        },
-        {
-            "title": "Track 2",
-            "src": "../../music/album2/track2.mp3"
-        },
-        {
-            "title": "Track 3",
-            "src": "../../music/album2/track3.mp3"
-        }
-        ]
-    }
+  "album2": {
+    "title": "Album 2",
+    "artist": "Artist 2",
+    "year": "2016",
+    "img": "./images/playlists/album-music-to-be-murdered.png",
+    "tracks": [
+      {
+        "title": "Track 1",
+        "src": "../../music/album2/track1.mp3",
+        "duration": "3:00",
+        "cover": "./images/playlists/album-music-riles.png"
+      },
+      {
+        "title": "Track 2",
+        "src": "../../music/album2/track2.mp3",
+        "duration": "3:45",
+        "cover": "./images/playlists/album-music-to-be-murdered.png"
+      },
+      {
+        "title": "Track 3",
+        "src": "../../music/album2/track3.mp3",
+        "duration": "3:45",
+        "cover": "./images/playlists/album-music-the-weeknd.png"
+      }
+    ]
+  }
 }
