@@ -107,6 +107,7 @@ p {
 
     &.lead-paragraph {
         font-size: rem(20);
+        font-weight: 500;
     }
 }
 
@@ -137,7 +138,7 @@ span {
     }
 
     section {
-        margin: 0 25px 25px 40px;
+        margin: 0 25px 40px 25px;
     }
 }
 

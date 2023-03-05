@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Actualités</title>
+    <title>Contact</title>
 </head>
 <body>
 <header>
@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="/">Accueil</a></li>
                 <li><a href="/news.html">Actu</a></li>
-                <li><a href="/playlist.html">Playlist</a></li>
+                <li><a href="#">Playlist</a></li>
                 <li><a href="/about-us.html">A propos</a></li>
                 <li><a href="/contact-page.html">Contact</a></li>
             </ul>
@@ -27,7 +27,7 @@
     </div>
     <div class="nav-desktop">
         <div class="nav-logo">
-            <img src="../src/images/logo.jpg" alt="Logo">
+            <img src="../src/images/logo.png" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -41,122 +41,53 @@
     </div>
 </header>
 <main>
-    <section class="news">
-        <h1>Toutes les actus</h1>
-        <p class="lead-paragraph">Toutes les news sur vos artistes préférés.</p>
-        <div class="news-ctnr">
-            <article class="card-news">
-                <div class="card-img">
-                    <div class="card-badges">
-                        <span class="badge">News</span>
-                        <span class="badge badge--red">Rap US</span>
-                    </div>
-                    <img src="../src/images/articles/article-dababy.jpg" alt="DaBaby image">
+    <section class="contact">
+        <h1>Nous contacter</h1>
+        <p class="lead-paragraph">
+            Envie de nous partager votre avis, 
+            des suggestions d’améliorations ou encore un proposition de partenariat ? 
+            Faites-le nous savoir !
+        </p>
+        <form class="form">
+            <div class="form-group">
+                <div>
+                    <label for="lastname">Votre nom</label>
+                    <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Thomas" required>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-content-title" text-overflow="50">
-                        Les plus grands noms du rap français
-                        se réunissent pour un concert historique !
-                    </h3>
-                    <p class="card-content-text">
-                        Nekfeu, Booba, Rohff, Kaaris, Jul, Neko, Lacrim, Sch, Lous and The Yakuza, Niska.
-                    </p>
-                    <a href="#" class="card-link">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="card-arrow"
-                                d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
-                                fill="black"/>
-                        </svg>
-                        Lire la news <span>8 février, 2023</span>
-                    </a>
+                <div>
+                    <label for="firstname">Votre prénom</label>
+                    <input class="form-input" type="text" name="firstname" id="firstname" placeholder="Dupont" required>
                 </div>
-            </article>
-            <article class="card-news">
-                <div class="card-img">
-                    <div class="card-badges">
-                        <span class="badge">News</span>
-                        <span class="badge badge--blue">Rap FR</span>
-                    </div>
-                    <img src="../src/images/articles/article-cyborgs.jpg" alt="DaBaby image">
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="email">Votre e-mail</label>
+                    <input class="form-input" type="email" name="email" id="email" placeholder="tdupont@gmail.com" required>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-content-title" text-overflow="50">
-                        Nekfeu dévoile son nouvel album : une réflexion
-                        sur les cyborgs
-                    </h3>
-                    <p class="card-content-text">
-                        Le nouvel album de Nekfeu donne à réfléchir...
-                    </p>
-                    <a href="#" class="card-link">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="card-arrow"
-                                d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
-                                fill="black"/>
-                        </svg>
-                        Lire la news <span>10 décembre, 2016</span>
-                    </a>
+                <div>
+                    <label for="phone">Votre numéro de téléphone</label>
+                    <input class="form-input" type="tel" name="phone" id="phone" placeholder="0607080910"pattern="0[1-9](?:\d{2}){4}" required>
                 </div>
-            </article>
-            <article class="card-news">
-                <div class="card-img">
-                    <div class="card-badges">
-                        <span class="badge">News</span>
-                        <span class="badge badge--orange">POP</span>
-                    </div>
-                    <img src="../src/images/articles/article-pop.jpg" alt="DaBaby image">
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="message">Qu’avez vous à nous dire ?</label>
+                    <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="J'adore la musique" required></textarea>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-content-title" text-overflow="50">
-                        Le phénomène de la musique pop : une analyse de
-                        son évolution et de son impact culturel contemporain
-                    </h3>
-                    <p class="card-content-text">
-                        La pop est le deuxième style musical le plus écouté.
-                    </p>
-                    <a href="#" class="card-link">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="card-arrow"
-                                d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
-                                fill="black"/>
-                        </svg>
-                        Lire la news <span>8 février, 2023</span>
-                    </a>
+            </div>
+            <div class="form-group submit">
+                <div>
+                    <input class="btn btn--disabled submit-btn" type="submit" value="Envoyer">
                 </div>
-            </article>
-            <article class="card-news">
-                <div class="card-img">
-                    <div class="card-badges">
-                        <span class="badge">News</span>
-                        <span class="badge badge--orange">Electro</span>
-                    </div>
-                    <img src="../src/images/articles/article-electro.jpg" alt="DaBaby image">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-content-title" text-overflow="50">
-                        Comment l'émergence de nouveaux sous-genres de la
-                        musique électronique redéfinit-elle la scène musicale actuelle ?
-                    </h3>
-                    <p class="card-content-text">
-                        Électro, Dubstep, House, Deep House... Les genres de musique électronique se multiplient.
-                    </p>
-                    <a href="#" class="card-link">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="card-arrow"
-                                d="M5.96685 0L4.91519 1.0575L9.07707 5.25H0V6.75H9.07707L4.91519 10.9425L5.96685 12L11.9337 6L5.96685 0Z"
-                                fill="black"/>
-                        </svg>
-                        Lire la news <span>8 février, 2023</span>
-                    </a>
-                </div>
-            </article>
-        </div>
+            </div>
+        </form>
     </section>
 </main>
 <footer>
     <div class="footer-content">
         <div class="footer-top">
             <div class="footer-logo">
-                <img src="../src/images/logo.jpg" alt="Logo">
+                <img src="../src/images/logo.png" alt="Logo">
             </div>
             <div class="footer-nav">
                 <h3>Contenu</h3>

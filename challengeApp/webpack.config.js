@@ -91,6 +91,10 @@ module.exports = {
             filename: "news.html"
         }),
         new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, "./site/contact-page.html"),
+            filename: "contact-page.html"
+        }),
+        new HTMLWebpackPlugin({
             template: path.resolve(__dirname, "./site/about-us.html"),
             filename: "about-us.html"
         }),

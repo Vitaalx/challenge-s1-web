@@ -9,4 +9,5 @@ import "../music/album2/track1.mp3"
 import "../music/album2/track2.mp3"
 import "../music/album2/track3.mp3"
 import "../music/list.json"
+import "./components/form";
 import "./components/carrousel";
