@@ -117,7 +117,6 @@
 .player-container {
   margin-top: 100px;
   width: 100%;
-  height: 300px;
   padding: 65px;
   background-color: black;
   border-bottom: 2px solid #FFD600;
@@ -149,4 +148,14 @@
     margin: 10px;
   }
 
+}
+
+@media screen and (max-width: $mobile) {
+  .player-container {
+    flex-direction: column;
+
+    .player-music {
+      flex-direction: column;
+    }
+  }
 }
